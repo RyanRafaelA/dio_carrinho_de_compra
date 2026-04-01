@@ -3,8 +3,10 @@ async function addItem(userCart, item){
  }
 
  async function calculateTotal(userCart){ 
-    return userCart.reduce((total, item) => total + item.subtotal(), 0);
- }
+    const result = userCart.reduce((total, item) => total + item.subtotal(), 0);
+    
+    console.log(result);
+}
 
  async function deleteItem(userCart, name){ }
 
